@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo su
 sudo yum update -y
-sudo yum install apache2 -y
-cd /var/www/html/index.html
+sudo yum install httpd -y
+service httpd start
